@@ -72,11 +72,13 @@ export default function FilterOffcanvas() {
           ></button>
         </div>
         <div className="offcanvas-body">
-          <form>
-            <div className="form-group">
-              <label htmlFor="content">محتویات</label>
+          <form className="Filter-1-form">
+            <div className="form-group Filter-1-row1">
+              <label htmlFor="content" className="Filter-1-row1-lable">
+                محتویات
+              </label>
               <select
-                className="form-control"
+                className="form-control form-select Filter-1-row1-select"
                 id="content"
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
@@ -84,10 +86,12 @@ export default function FilterOffcanvas() {
                 <option>گیاهی</option>
               </select>
             </div>
-            <div className="form-group">
-              <label htmlFor="delivery">روش تحویل</label>
+            <div className="form-group Filter-1-row2">
+              <label htmlFor="delivery" className="Filter-1-row2-lable">
+                روش تحویل
+              </label>
               <select
-                className="form-control"
+                className="form-control form-select Filter-1-row2-select"
                 id="delivery"
                 value={delivery}
                 onChange={(e) => setDelivery(e.target.value)}
@@ -95,7 +99,7 @@ export default function FilterOffcanvas() {
                 <option>ارسال با پیک</option>
               </select>
             </div>
-            <div className="form-group form-check">
+            <div className="form-group form-check Filter-1-row3">
               <input
                 type="checkbox"
                 className="form-check-input"
@@ -107,7 +111,7 @@ export default function FilterOffcanvas() {
                 دارای امتیاز پس از خرید
               </label>
             </div>
-            <div className="form-group form-check">
+            <div className="form-group form-check Filter-1-row3">
               <input
                 type="checkbox"
                 className="form-check-input"
@@ -119,20 +123,22 @@ export default function FilterOffcanvas() {
                 دارای کد تخفیف
               </label>
             </div>
-            <button
-              type="button"
-              className="btn btn-primary"
-              onClick={applyFilters}
-            >
-              اعمال فیلتر
-            </button>
-            <button
-              type="button"
-              className="btn btn-secondary"
-              onClick={resetFilters}
-            >
-              حذف فیلترها
-            </button>
+            <div className="Filter-1-btn">
+              <button
+                type="button"
+                className="btn btn-primary Filter-1-btn1"
+                onClick={applyFilters}
+              >
+                اعمال فیلتر
+              </button>
+              <button
+                type="button"
+                className="btn btn-secondary Filter-1-btn2"
+                onClick={resetFilters}
+              >
+                حذف فیلترها
+              </button>
+            </div>
           </form>
         </div>
       </div>

@@ -1,8 +1,14 @@
 import "./Fodds.css";
 import img1 from "../../assets/img1.jpeg";
 import FilterOffcanvas from "./Components/Filter";
+import { useNavigate } from "react-router-dom";
 
 export default function Foods() {
+  const navigate = useNavigate();
+  const handleNextPage = () => {
+    navigate("/map");
+  };
+
   return (
     <>
       <div className="FoodPage">
@@ -38,10 +44,13 @@ export default function Foods() {
               </div>
               <div className="FoodPage-body-filters">
                 <section className="FoodPage-body-filter-1">
-                  <FilterOffcanvas/>
+                  <FilterOffcanvas />
                 </section>
                 <section className="FoodPage-body-filter-2">
-                  <button className="btn btn-primary FoodPage-body-filter-2-button">
+                  <button
+                    className="btn btn-primary FoodPage-body-filter-2-button"
+                    onClick={handleNextPage}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"

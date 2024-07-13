@@ -7,3 +7,50 @@
     border-radius: 50% !important;
 
 }
+
+.Filter-1-form {
+    height: 100%;
+}
+
+.Filter-1-row1 ,
+.Filter-1-row2 {
+    position: relative;
+    margin-top: 30px;
+}
+
+.Filter-1-row1-lable ,
+.Filter-1-row2-lable {
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    background-color: #fff;
+    padding: 0 4px;
+}
+
+.Filter-1-row3 {
+    margin-top: 15px;
+}
+
+.Filter-1-btn {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Filter-1-btn1  ,
+.Filter-1-btn2 {
+    width: 49%;
+    padding: 10px 15px !important;
+    border: 0 !important;
+}
+
+.Filter-1-btn1 {
+    background-color: #c39854 !important;
+}
+
+.Filter-1-btn2 {
+    background-color: #f2f2f2 !important;
+    color: #c09148 !important;
+}
