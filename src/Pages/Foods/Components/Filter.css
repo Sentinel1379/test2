@@ -1,0 +1,9 @@
+.offcanvas.offcanvas-bottom {
+    height: 70vh !important;
+}
+
+.btn-close {
+    border: 1px solid #000 !important;
+    border-radius: 50% !important;
+
+}

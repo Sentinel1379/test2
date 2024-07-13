@@ -1,0 +1,81 @@
+.LoginPage {
+    width: 100%;
+    height: 98vh;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.LoginPage-logo {
+    height: 50%;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.LoginPage-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.LoginPage-form {
+    height: 50%;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.LoginPage-form-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.LoginPage-form-text {
+   margin-bottom: 30px;
+}
+
+.LoginPage-form-inputNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.LoginPage-form-inputNumber input{
+    width: 99%;
+    padding: 10px 10px;
+    direction: ltr;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+}
+
+.LoginPage-form-inputNumber span {
+    font-size: 12px;
+    padding: 0 3px;
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.LoginPage-form-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginPage-form-btn button {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #c39854;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}

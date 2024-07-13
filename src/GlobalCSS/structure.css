@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Sahel;
+    src: url(../assets/Fonts/sahel-font-v1.0.0-alpha9/Sahel.eot),
+        url(../assets/Fonts/sahel-font-v1.0.0-alpha9/Sahel.ttf),
+        url(../assets/Fonts/sahel-font-v1.0.0-alpha9/Sahel.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Sahel !important;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
